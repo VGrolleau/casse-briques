@@ -1,1 +1,3 @@
-# casse-briques
+# Casse-briques
+
+Jeu du casse-briques en JS Vanilla
