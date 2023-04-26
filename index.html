@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Jeu Casse-Briques JS</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
+
+        <style>
+            *{
+                font-family: "Germania One";
+            }
+
+            #sound{
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                position: absolute;
+                top: 480px;
+                left: 15px;
+            }
+
+            #pause{
+                width: 75px;
+                height: 25px;
+                cursor: pointer;
+                position: absolute;
+                top: 480px;
+                left: 265px;
+            }
+
+            #gameover{
+                width: 340px;
+                height: 500px;
+                position: absolute;
+                background: rgba(0, 0, 0, 0.5);
+                display: none;
+            }
+
+            #youwin{
+                width: 100px;
+                position: absolute;
+                top: 200px;
+                left: 118px;
+                display: none;
+            }
+
+            #youlose{
+                width: 340px;
+                position: absolute;
+                top: 100px;
+                left: 0px;
+                display: none;
+            }
+
+            #restart{
+                cursor: pointer;
+                position: absolute;
+                top: 310px;
+                left: 138px;
+                font-size: 1.25em;
+                color: #FFF;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button type="button" id="pause">Play</button>
+        
+        <div class="sound">
+            <img src="img/SOUND_ON.png" alt="" id="sound">
+        </div>
+
+        <div id="gameover">
+            <img src="img/youwin.png" alt="" id="youwin">
+            <img src="img/gameover.png" alt="" id="youlose">
+            <div id="restart">Rejouer</div>
+        </div>
+
+        <canvas id="casse-briques" width="340" height="500"></canvas>
+
+        <script src="elements.js"></script>
+        <script src="jeu.js"></script>
+    </body>
+</html>
